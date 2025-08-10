@@ -122,9 +122,7 @@ function List({ posts }) {
           </li>
         ))}
       </ul>
-      <Test>
-        <SlowComponent />
-      </Test>
+      <Test></Test>
     </>
   );
 }
