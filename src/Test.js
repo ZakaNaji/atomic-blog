@@ -16,7 +16,7 @@ const SlowComponent = memo(function SlowComponent({ test }) {
 
 export default function Test() {
   const [count, setCount] = useState(0);
-  const test = { test: false };
+  const test = useMemo(() => ({ test: false }), []);
   return (
     <div>
       <h1>Slow counter?!?</h1>
